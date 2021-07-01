@@ -1,4 +1,7 @@
-This formula converts an ip address like:
-192.168.1.1 to something that Excel can sort:  192.168.001.001
+This formula converts an ip address in cell G4:
+G4 Cell:  192.168.1.1 
+
+to something that Excel can sort:  192.168.001.001
 
 =TEXT(LEFT(G4,FIND(".",G4,1)-1),"000") & "." & TEXT(MID(G4,FIND( ".",G4,1)+1,FIND(".",G4,FIND(".",G4,1)+1)-FIND(".",G4,1)-1),"000") & "." & TEXT(MID(G4,FIND(".",G4,FIND(".",G4,1)+1)+1,FIND(".",G4, FIND(".",G4,FIND(".",G4,1)+1)+1)-FIND(".",G4,FIND(".",G4,1)+1)-1), "000") & "." & TEXT(RIGHT(G4,LEN(G4)-FIND(".",G4,FIND(".",G4,FIND( ".",G4,1)+1)+1)),"000")
+
