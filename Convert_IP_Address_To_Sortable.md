@@ -7,14 +7,9 @@ So, with this in mind, I have to use the formula below to take values in one cel
 |  |  A | B | C | 
 | ----------- | ----------- | ---- | ----| 
 |1| | | | 
-|2| | | | 
-|3| |  Sortable IP Address    |   IP Address |
-|4| |192.168.001.001  |  192.168.1.1 |
+|2| |  Sortable IP Address    |   IP Address |
+|3| |192.168.001.001  |  192.168.1.1 |
 
 ```
-=TEXT(LEFT(B3,FIND(".",B3,1)-1),"000") & "." & TEXT(MID(B3,FIND( ".",B3,1)+1,FIND(".",B3,FIND(".",B3,1)+1)-FIND(".",B3,1)-1),"000") & "." & TEXT(MID(B3,FIND(".",B3,FIND(".",B3,1)+1)+1,FIND(".",B3, FIND(".",B3,FIND(".",B3,1)+1)+1)-FIND(".",B3,FIND(".",B3,1)+1)-1), "000") & "." & TEXT(RIGHT(B3,LEN(B3)-FIND(".",B3,FIND(".",B3,FIND( ".",B3,1)+1)+1)),"000")
+=TEXT(LEFT(C3,FIND(".",C3,1)-1),"000") & "." & TEXT(MID(C3,FIND( ".",C3,1)+1,FIND(".",C3,FIND(".",C3,1)+1)-FIND(".",C3,1)-1),"000") & "." & TEXT(MID(C3,FIND(".",C3,FIND(".",C3,1)+1)+1,FIND(".",C3, FIND(".",C3,FIND(".",C3,1)+1)+1)-FIND(".",C3,FIND(".",C3,1)+1)-1), "000") & "." & TEXT(RIGHT(C3,LEN(C3)-FIND(".",C3,FIND(".",C3,FIND( ".",C3,1)+1)+1)),"000")
 ```
-
-
-
-
