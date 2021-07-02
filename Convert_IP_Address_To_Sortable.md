@@ -6,9 +6,9 @@ So, with this in mind, I have to use the formula below to take values in one cel
 
 |  |  A | B | C | D | E | F | G | H |
 | ----------- | ----------- | ---- | ----| ---- | ----| ----| ----| --- |
-|1| | | | | | | IP Address    |  New Sortable IP |
+|1| | | | | | |     |   |
 |2| | | | | | || | 
-|3| | | | | | || | 
+|1| | | | | | | IP Address    |  New Sortable IP |
 |4| | | | | | |192.168.1.1  |  192.168.001.001 |
 
 ```
