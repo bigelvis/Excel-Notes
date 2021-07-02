@@ -14,5 +14,5 @@ So, with this in mind, I have to use the formula below to take values in one cel
 ```
 =TEXT(LEFT(G4,FIND(".",G4,1)-1),"000") & "." & TEXT(MID(G4,FIND( ".",G4,1)+1,FIND(".",G4,FIND(".",G4,1)+1)-FIND(".",G4,1)-1),"000") & "." & TEXT(MID(G4,FIND(".",G4,FIND(".",G4,1)+1)+1,FIND(".",G4, FIND(".",G4,FIND(".",G4,1)+1)+1)-FIND(".",G4,FIND(".",G4,1)+1)-1), "000") & "." & TEXT(RIGHT(G4,LEN(G4)-FIND(".",G4,FIND(".",G4,FIND( ".",G4,1)+1)+1)),"000")
 ```
-| frac      | streams |
+|           | A | B |
 | ----------- | ----------- |
