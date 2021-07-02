@@ -7,11 +7,14 @@ So, with this in mind, I have to use the formula below to take values in one cel
 |  |  A | B | C | 
 | ----------- | ----------- | ---- | ----| 
 |1| | | | 
-|2| |  IP Address    |  New Sortable IP |
-|3| |192.168.1.1  |  192.168.001.001 |
+|2| | | | 
+|3| |  Sortable IP Address    |   IP Address |
+|4| |192.168.001.001  |  192.168.1.1 |
 
 ```
 =TEXT(LEFT(B3,FIND(".",B3,1)-1),"000") & "." & TEXT(MID(B3,FIND( ".",B3,1)+1,FIND(".",B3,FIND(".",B3,1)+1)-FIND(".",B3,1)-1),"000") & "." & TEXT(MID(B3,FIND(".",B3,FIND(".",B3,1)+1)+1,FIND(".",B3, FIND(".",B3,FIND(".",B3,1)+1)+1)-FIND(".",B3,FIND(".",B3,1)+1)-1), "000") & "." & TEXT(RIGHT(B3,LEN(B3)-FIND(".",B3,FIND(".",B3,FIND( ".",B3,1)+1)+1)),"000")
 ```
+
+
 
 
