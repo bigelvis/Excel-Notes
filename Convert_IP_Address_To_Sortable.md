@@ -1,4 +1,4 @@
-#Sort IP Addresses in Excel
+# Sort IP Addresses in Excel
 
 I often have to sort IP Addresses in a spreadsheet, but Excel (somehow) doesn't natively support this.  Why this isn't a number type, I have no idea.
 
