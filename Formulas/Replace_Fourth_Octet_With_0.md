@@ -15,6 +15,6 @@ This formula first checks to see if the value in B3 is empty or contains "192." 
 ```
 
 To search for a 10.x address, you would use the following:
-```
+```Excel
 =IF(LEFT(B3,3)="10.",LEFT(B3,FIND("~",SUBSTITUTE(B3,".","~",3))-1)&".0","")
 ```
