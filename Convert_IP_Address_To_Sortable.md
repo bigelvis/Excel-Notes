@@ -5,6 +5,7 @@ I often have to sort IP Addresses in a spreadsheet, but Excel (somehow) doesn't 
 So, with this in mind, I have to use the formula below to take values in one cell, and convert it.  Then I sort this column and hide it.
 
 |  |  A | B | C | D | E | F | G |
+| ----------- | ----------- |
 |1| | | | | | ||  IP Address    |  New Sortable IP |
 |2| | | | | | || | |
 |3| | | | | | || | |
