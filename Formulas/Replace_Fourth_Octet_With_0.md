@@ -1,4 +1,4 @@
-# Replace the Fourth Octet In An IP Address With A 0
+# Replace the Fourth Octet In An IP Address With A "0"
 
 When exporting a lot of IPs, I sometimes need the subnet, and not the IP.  This happens when I'm trying to cross-reference an IP with an office assignment, for example.  This formula just simply puts a .0 at the end.
 
