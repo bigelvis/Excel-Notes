@@ -8,11 +8,11 @@ So, with this in mind, I have to use the formula below to take values in one cel
 | ----------- | ----------- | ---- | ----| ---- | ----| ----| ----| --- |
 |1| | | | | | |     |   |
 |2| | | | | | || | 
-|1| | | | | | | IP Address    |  New Sortable IP |
+|3| | | | | | | IP Address    |  New Sortable IP |
 |4| | | | | | |192.168.1.1  |  192.168.001.001 |
 
 ```
 =TEXT(LEFT(G4,FIND(".",G4,1)-1),"000") & "." & TEXT(MID(G4,FIND( ".",G4,1)+1,FIND(".",G4,FIND(".",G4,1)+1)-FIND(".",G4,1)-1),"000") & "." & TEXT(MID(G4,FIND(".",G4,FIND(".",G4,1)+1)+1,FIND(".",G4, FIND(".",G4,FIND(".",G4,1)+1)+1)-FIND(".",G4,FIND(".",G4,1)+1)-1), "000") & "." & TEXT(RIGHT(G4,LEN(G4)-FIND(".",G4,FIND(".",G4,FIND( ".",G4,1)+1)+1)),"000")
 ```
-|    | A | B |
-| ----------- | ----------- | -----|
+
+
